@@ -1,0 +1,81 @@
+/* --- YouTube Filters (Jan 18, 2026) --- */
+
+/* ytd-item-section-renderer */
+ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope > .ytd-item-section-renderer.style-scope {
+    display: none !important;
+}
+
+/* #below */
+#below {
+    display: none !important;
+}
+
+/* #secondary */
+#secondary {
+    display: none !important;
+}
+
+/* scroll-container filter bar */
+#scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope {
+    display: none !important;
+}
+
+/* Guide sections */
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3),
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4),
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5),
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2),
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(6),
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(1) {
+    display: none !important;
+}
+
+/* Rich shelf renderers */
+#contents-container > .ytd-rich-shelf-renderer.style-scope,
+.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope,
+.yt-shelf-header-layout--disable-horizontal-padding.yt-shelf-header-layout,
+ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope {
+    display: none !important;
+}
+
+/* Flexible actions header */
+.ytFlexibleActionsViewModelInline.yt-page-header-view-model__page-header-flexible-actions--page-header-flexible-actions-margin-bottom.yt-page-header-view-model__page-header-flexible-actions--page-header-flexible-actions-margin-top.yt-page-header-view-model__page-header-flexible-actions.ytFlexibleActionsViewModelHost {
+    display: none !important;
+}
+
+/* Tabs container */
+#tabsContainer {
+    display: none !important;
+}
+
+/* Mini guide */
+ytd-mini-guide-renderer.ytd-app.style-scope {
+    display: none !important;
+}
+
+/* Icon button */
+#icon > .yt-icon-button.style-scope {
+    display: none !important;
+}
+
+/* Guide button */
+#guide-button {
+    display: none !important;
+}
+
+/* End section */
+#end {
+    display: none !important;
+}
+
+/* Image blocking (cannot block network requests in CSS, but can hide the element) */
+img[src*="yt3.googleusercontent.com/vlT3bpFtOqdviCgp0FIyov5l7KlSzhcMqUY7Asb5Mgfk4pXGdgqLEgRpD_6OZ012eLWFG3Sk"] {
+    display: none !important;
+}
+
+/* --- YouTube Music Filters (Jan 19, 2026) --- */
+
+music-app #sections,
+#sections {
+    display: none !important;
+}

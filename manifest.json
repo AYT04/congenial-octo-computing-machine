@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Filter Blocker",
+  "version": "1.0",
+  "description": "Blocks specific YouTube and YouTube Music UI elements.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://music.youtube.com/*"
+      ],
+      "css": ["filters.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
