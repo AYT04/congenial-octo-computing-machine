@@ -1,49 +1,51 @@
-# 📚 README.md  
+# 📚 README.md
+
 ### *YouTube Filter Blocker — because sometimes you just want peace.*
 
 ## 🚀 What Even Is This
-This Chrome extension is basically digital noise‑cancelling headphones for YouTube.  
-It yeets away the clutter, the cringe, the “recommended for you” that you *never* asked for, and the sidebar that keeps trying to drag you into a 3‑hour iceberg video at 2AM.
 
-If YouTube is the chaotic friend who won’t stop oversharing, this extension is the friend who gently puts a hand on their shoulder and says:  
-“Bestie… stop.”
+This Chrome extension is digital noise‑cancelling for YouTube. It removes the clutter and recommended content you never asked for, keeping you focused on the video you actually intended to watch.
 
-## ✨ Features (aka: Things It Bullies Into Disappearing)
-- Sidebars? Gone.  
-- Recommended shelves? Deleted from existence.  
-- Guide sections? Vanished like your motivation on a Monday.  
-- YouTube Music clutter? *Silenced.*  
-- Random profile images? Poof.  
-- Basically anything that tries to distract you from the one video you actually came to watch.
+## ✨ Features (What it hides)
 
-## 🛠️ Installation (It’s Giving ‘Tech Wizard’)
-1. Download or clone this chaotic masterpiece.  
-2. Open Chrome → type `chrome://extensions` like a hacker.  
-3. Turn on **Developer Mode** (top right — you’ll feel powerful).  
-4. Click **Load unpacked**.  
-5. Select the folder.  
-6. Boom. You’re now the CEO of Focus™.
+* **Sidebars & Recommendations**: No more distraction loops.
+* **Guide Sections**: Simplifies the main navigation menu.
+* **YouTube Music Clutter**: Keeps the music interface clean.
+* **Pure CSS**: No tracking, no data harvesting, just style overrides.
 
-## 🧠 How It Works (The Nerdy Bit)
-It injects CSS into YouTube pages and tells certain elements to sit down, be quiet, and stop bothering you.  
-No JavaScript shenanigans. No tracking. No data harvesting.  
-Just pure, wholesome “leave me alone” energy.
+## 🖼️ Visual Proof (The "Results")
+
+### 1. The Clean Slate (Home Feed)
+
+When you first open YouTube, the entire "Recommended" grid is gone, leaving you with a distraction-free search bar.
+
+### 2. Focused Search
+
+Search results are displayed clearly without the usual "People also watched" or "Related to your search" shelves cluttering the view.
+
+### 3. The "Video Only" Experience
+
+While watching a video, the entire sidebar of related videos and the comment section below are hidden.
+
+## 🛠️ Installation
+
+1. Download or clone this repository.
+2. Open Chrome and navigate to `chrome://extensions`.
+3. Turn on **Developer Mode** in the top right.
+4. Click **Load unpacked** and select this folder.
+
+## 🧠 Technical Overview
+
+This extension uses a `manifest.json` to inject `filters.css` at `document_start`. By using `!important` declarations in the CSS, we ensure our "hidden" state overrides the default YouTube styles even as the page loads.
 
 ## 🤝 Contributing
-If you want to add more filters, fix something, or just vibe with the code, feel free to open a PR.  
-If you break something… also open a PR.  
-We’re all just winging it anyway.
+
+Feel free to open a PR if you find a new UI element that needs to be "yeeted" out of existence.
 
 ## ⚠️ Disclaimer
-This extension may cause:
-- Increased productivity  
-- Decreased doom‑scrolling  
-- A sudden realization that you actually *can* finish your tasks  
-- A sense of inner peace not felt since 2016  
 
-Use responsibly.
+This extension may cause increased productivity and a sense of inner peace. Use responsibly.
 
-## 🧋 Final Thoughts
-YouTube is great, but sometimes it needs boundaries.  
-This extension is those boundaries.  
-Go forth, watch your one video, and escape before the algorithm seduces you again.
+## ⚖️ License
+
+Licensed under the **GNU General Public License v3.0**.
