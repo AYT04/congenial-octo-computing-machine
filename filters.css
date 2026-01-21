@@ -1,47 +1,56 @@
-/* --- YouTube Core Interface Filters --- */
+/* ==========================================================
+   YOUTUBE & YOUTUBE MUSIC INTERFACE FILTERS
+   ========================================================== */
 
-/* Hides the 'Related Videos' sidebar and secondary results on watch pages */
+/* Watch Page: Hides Related Videos, Sidebar, Comments, and Description */
 #secondary, 
-ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope > .ytd-item-section-renderer.style-scope {
-    display: none !important;
-}
-
-/* Removes the interaction area below the video (comments, description) */
+ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope > .ytd-item-section-renderer.style-scope,
 #below {
     display: none !important;
 }
 
-/* --- Navigation & Guide Controls --- */
-
-/* Hides all sections of the left-hand sidebar guide to prevent navigation distractions */
-ytd-guide-section-renderer.ytd-guide-renderer.style-scope {
-    display: none !important;
-}
-
-/* Hides the 'Mini Guide' (the slim sidebar seen on the home feed) */
+/* Navigation: Hides Left Sidebar Guide, Mini Guide, and Menu Button */
+ytd-guide-section-renderer.ytd-guide-renderer.style-scope,
 ytd-mini-guide-renderer.ytd-app.style-scope,
 #guide-button {
     display: none !important;
 }
 
-/* --- Feed & Content Layout --- */
-
-/* Removes horizontal 'Shelves' (e.g., Shorts, Breaking News, or Recommended shelves) */
+/* Home Feed: Removes Shelves (Shorts/News) and Category Filter Bar */
 #contents-container > .ytd-rich-shelf-renderer.style-scope,
 .ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope,
-ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope {
-    display: none !important;
-}
-
-/* Removes the category filter bar (e.g., "All", "Music", "Live") at the top of the feed */
+ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope,
 #scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope {
     display: none !important;
 }
 
-/* --- YouTube Music Specifics --- */
-
-/* Silences the 'Home', 'Explore', and 'Library' sections in the Music app */
+/* YouTube Music: Silences Home, Explore, and Library sections */
 music-app #sections,
 #sections {
+    display: none !important;
+}
+
+/* ==========================================================
+   TWITCH INTERFACE FILTERS
+   ========================================================== */
+
+/* Hides Side Nav sections, Prime offers, Navigation links, and Channel panels */
+div.Layout-sc-1xcs6mc-0.iGMbNn.side-nav-section:nth-of-type(1),
+div.Layout-sc-1xcs6mc-0.iGMbNn.side-nav-section:nth-of-type(2),
+.Layout-sc-1xcs6mc-0.ffPTzE,
+.Layout-sc-1xcs6mc-0.hCMJIV,
+.Layout-sc-1xcs6mc-0.AoXTY.prime-offers > .Layout-sc-1xcs6mc-0.bkOPih > div:nth-of-type(1) > .InjectLayout-sc-1i43xsx-0.iDMNUO > div:nth-of-type(1) > .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO,
+.Layout-sc-1xcs6mc-0.jdNosq.collapse-toggle,
+.navigation-link,
+div.Layout-sc-1xcs6mc-0.gJICsA:nth-of-type(2) > .ScCoreButton-sc-ocjdkq-0.kJMgAB,
+div.Layout-sc-1xcs6mc-0.gJICsA:nth-of-type(1),
+.InjectLayout-sc-1i43xsx-0.dwGPiE,
+.Layout-sc-1xcs6mc-0.DXcMf.about-section,
+.Layout-sc-1xcs6mc-0.channel-panels,
+.ScCoreButton-sc-ocjdkq-0.gGttfb.InjectLayout-sc-1i43xsx-0,
+.ScCoreButton-sc-ocjdkq-0.gxYeIp,
+.Layout-sc-1xcs6mc-0.fIBvJU > .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO,
+.Layout-sc-1xcs6mc-0.ffzgSf,
+.Layout-sc-1xcs6mc-0.fHGhCf > .ScCoreButton-sc-ocjdkq-0.kJMgAB > .ScCoreButtonLabel-sc-s7h2b7-0.kaIUar {
     display: none !important;
 }
